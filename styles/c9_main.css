@@ -9,7 +9,7 @@ html {
 body {
 	font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
-    width: 99%;                     /* changed from 800 pixels */
+    width: 99%;
     max-width: 960px;
     margin: 0 auto;
     border: 3px solid #931420;
@@ -22,8 +22,7 @@ a:focus, a:hover {
 header {
 	padding: 1.5em 0 2em 0;
 	border-bottom: 3px solid #931420;
-	background-image: linear-gradient(
-	    30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+	background-image: linear-gradient(30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
 }
 header h2 {
 	font-size: 175%;
@@ -35,7 +34,7 @@ header h3 {
 }
 header img {
 	float: left;
-	padding: 0 3.75%;            /* 30 / 800 x 100 */
+	padding: 0 3.75%;
 }
 .shadow {
 	text-shadow: 2px 2px 2px #800000;
@@ -46,9 +45,10 @@ header img {
 	margin: 0;
 	padding: 0;
 	position: relative;
+	display: flex; /* Changed to flex */
 }
 #nav_menu ul li {
-    width: 20%;                 /* 160 / 800 x 100 */
+    /* width: 20%; */ /* Removed width property */
 }
 #nav_menu ul li a {
     display: block;
@@ -80,12 +80,12 @@ header img {
 }
 /* the styles for the main content */
 main {
+    display: flex; /* Changed to flex */
 }
-
 /* the styles for the section */
 section {
-	width: 65.625%;                  /* 525 / 800 X 100 */
-	padding: 0 2.5% 20px 2.5%;       /* 20 / 800 x 100 */
+	padding: 0 2.5% 20px 2.5%; /* Changed padding */
+	width: 65.625%; /* Removed width property */
 }
 section h1 {
 	font-size: 150%;
@@ -135,15 +135,14 @@ article img {
 
 /* the styles for the aside */
 aside {
-	width: 26.875%;                     /* 215 / 800 x 100 */
-	padding: 0 0 20px 2.5%;             /* 20 / 800 x 100 */
+	padding: 0 0 20px 2.5%; /* Changed padding */
+	width: 26.875%; /* Removed width property */
 }
 aside h2 {
 	color: #800000;
 	font-size: 130%;
 	padding: .5em 0 .25em 0;
 }
-
 aside h3 {
 	font-size: 105%;
 	padding-bottom: .25em;
@@ -155,7 +154,6 @@ aside img {
 /* the styles for the footer */
 footer {
 	background-color: #931420;
-
 }
 footer p {
 	text-align: center;
